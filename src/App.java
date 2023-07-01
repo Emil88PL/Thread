@@ -2,12 +2,14 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         
     
-        
+        // Create sublclass of Thread
         MyThread thread1 = new MyThread(); // 1 way
 
+        //implement Runnable interface and pass instance as an argument to Thread() 
         MyRunnable runnable1 = new MyRunnable(); //
         Thread thread2 = new Thread(runnable1); // 2 way
 
+        //thread1.setDaemon(true); //
   
 
         thread1.start(); 
