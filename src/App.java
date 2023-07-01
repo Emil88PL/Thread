@@ -11,6 +11,11 @@ public class App {
 
         System.out.println(Thread.currentThread().isAlive());
 
+        for ( int i = 3; i > 0; i-- ) {
+            System.out.println(i);
+            Thread.sleep(1000);
+        }
 
+        System.out.println("Done!");
     }
 }
